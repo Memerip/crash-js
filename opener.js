@@ -58,7 +58,6 @@ function playBall() {
     }
 }
 
-/* [Oct 2021] Better code. */
 window.onload = function () {
 	flagRun = 1;
 	
