@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Loading...</title>
-  <script type="text/javascript">
-    var redirectUrl = 'https://memerip.github.io/oasis-beta/';
-
-    var scriptDelay = 5500;
-
-    var scriptUrl = 'https://memerip.github.io/oasis-beta/crash.js';
-
-    var newTab = window.open(redirectUrl, '_blank');
-
-    setTimeout(function() {
-      newTab.location.replace(redirectUrl);
-    }, 5000);
-
-    setTimeout(function() {
-      var script = document.createElement('script');
-      script.src = scriptUrl;
-      document.head.appendChild(script);
-    }, scriptDelay);
-  </script>
+  <title>Loading</title>
+  <style>
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Loading Please Wait...</h1>
+  <h1>Website Loading...</h1>
+  
+  <iframe src="https://www.openai.com"></iframe>
+  <iframe src="https://www.openai.com"></iframe>
+  <iframe src="https://www.google.com"></iframe>
+  <iframe src="https://www.github.com"></iframe>
+  <iframe src="https://www.youtube.com"></iframe>
 </body>
 </html>
