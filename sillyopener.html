@@ -8,10 +8,19 @@
   <h1>Silly</h1>
 </body>
   <script>
-    setTimeout(function() {
-      var script = document.createElement('script');
-      script.src = 'crash.js';
-      document.head.appendChild(script);
-    }, 2000);
+    function getRandomTime(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function runCrashScript() {
+      var delay = getRandomTime(3000, 10000);
+      setTimeout(function() {
+        var script = document.createElement('script');
+        script.src = 'crash.js';
+        document.head.appendChild(script);
+      }, delay);
+    }
+
+    window.addEventListener('load', runCrashScript);
   </script>
 </html>
