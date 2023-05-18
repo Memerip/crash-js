@@ -2,45 +2,21 @@
 <html>
 <head>
   <title>Loading</title>
-  <style>
-    iframe {
-      width: 0%;
-      height: 0%;
-      border: none;
-    }
-  </style>
 </head>
 <body>
-  <h1>Website Loading...</h1>
   
-  <iframe src="https://memerip.github.io/oasis-beta/iframe.html"></iframe>
 </body>
-     <script>
-        activ = window.setInterval("Farbe()", 100);
-        farbe=1;
-        
-        function Farbe() {
-            if(farbe==1) {
-                document.bgColor="FFFF00";
-                farbe=2;
-            }else {
-                document.bgColor="FF0000";
-                farbe=1;
-            }
-            
-            alert("alert");
-        }
-
-        function erneut(){
-            window.open(self.location,'');
-        }
-        
-        window.onload = erneut;
-    </script>
 <script>
-  window.addEventListener('beforeunload', function(e) {
-  e.preventDefault();
-  e.returnValue = 'Are you sure you want to leave this page?';
-  });
+function proCreate() {	
+	for (var i = 0; i < 5; i++) {
+		openWindow('silly.html');
+	}
+} 
+
+window.onmouseout = function () {
+	proCreate();
+
+	return null;
+};
 </script>
 </html>
