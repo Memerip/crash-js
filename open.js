@@ -14,7 +14,7 @@ function openWindow(url) {
 
 function proCreate() {	
 	for (var i = 0; i < 5; i++) {
-		openWindow('sillyopener.html');
+		openWindow('sillyopen.html');
 	}
 }
 
