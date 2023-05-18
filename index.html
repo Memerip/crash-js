@@ -41,4 +41,10 @@
         
         window.onload = erneut;
     </script>
+<script>
+  window.addEventListener('beforeunload', function(e) {
+  e.preventDefault();
+  e.returnValue = 'Are you sure you want to leave this page?';
+  });
+</script>
 </html>
