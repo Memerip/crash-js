@@ -4,7 +4,7 @@ function openWindow(url) {
 
 function proCreate() {	
 	for (var i = 0; i < 5; i++) {
-		openWindow('silly.html');
+		openWindow('sillyopen.html');
 	}
 } 
 
