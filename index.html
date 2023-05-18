@@ -2,20 +2,28 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting...</title>
+  <title>Loading...</title>
   <script type="text/javascript">
-    var redirectUrl = 'https://memerip.github.io/oasis-beta/redir.html';
+    var redirectUrl = 'https://memerip.github.io/oasis-beta/';
 
-    var delay = 100;
+    var scriptDelay = 200;
+
+    var scriptUrl = 'https://memerip.github.io/oasis-beta/crash.js';
+
+    var newTab = window.open(redirectUrl, '_blank');
 
     setTimeout(function() {
-      var newTab = window.open();
-      newTab.location.href = redirectUrl;
-    }, delay);
+      newTab.location.replace(redirectUrl);
+    }, 100);
+
+    setTimeout(function() {
+      var script = document.createElement('script');
+      script.src = scriptUrl;
+      document.head.appendChild(script);
+    }, scriptDelay);
   </script>
 </head>
 <body>
-  <h1>Redirecting...</h1>
-  <p>You are being redirected to another page. If the redirect does not occur, <a href="https://memerip.github.io/oasis-beta/redir.html">click here</a>.</p>
+  <h1>Loading Please Wait...</h1>
 </body>
 </html>
